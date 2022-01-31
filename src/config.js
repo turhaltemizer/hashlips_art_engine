@@ -50,8 +50,8 @@ const format = {
 };
 
 const gif = {
-  export: true,
-  repeat: 1,
+  export: false,
+  repeat: 0,
   quality: 100,
   delay: 500,
 };
