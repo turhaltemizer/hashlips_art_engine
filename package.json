@@ -26,6 +26,8 @@
   "dependencies": {
     "canvas": "^2.8.0",
     "gif-encoder-2": "^1.0.5",
+    "pip": "^0.0.1",
+    "python": "^0.0.4",
     "sha1": "^1.1.1"
   }
 }

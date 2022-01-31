@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Toy Poodle Pixel Art";
+const description = "Toy poodle pixel art nft is generated programmatically";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "https://www.turhaltemizer.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x8a4F748002495BD0DEE42F748a80096d040bf504",
       share: 100,
     },
   ],
@@ -27,12 +27,14 @@ const layerConfigurations = [
     growEditionSizeTo: 5,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Body" },
+      { name: "Dress" },
+      { name: "Ear" },
+      { name: "Head" },
+      { name: "Mouth" },
+      { name: "Halloween" },
+      { name: "Glasses" },
+      { name: "Hat" },
     ],
   },
 ];
@@ -42,14 +44,14 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 750,
+  height: 750,
   smoothing: false,
 };
 
 const gif = {
-  export: false,
-  repeat: 0,
+  export: true,
+  repeat: 5,
   quality: 100,
   delay: 500,
 };
@@ -68,7 +70,7 @@ const text = {
 };
 
 const pixelFormat = {
-  ratio: 2 / 128,
+  ratio: 50 / 128,
 };
 
 const background = {
