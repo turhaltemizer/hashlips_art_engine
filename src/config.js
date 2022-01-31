@@ -11,7 +11,7 @@ const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
+  seller_fee_basis_points: 10000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.turhaltemizer.com",
   creators: [
     {
@@ -51,7 +51,7 @@ const format = {
 
 const gif = {
   export: true,
-  repeat: 5,
+  repeat: 1,
   quality: 100,
   delay: 500,
 };
